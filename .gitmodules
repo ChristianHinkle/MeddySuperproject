@@ -5,12 +5,12 @@
 [submodule "boost"]
 	path = boost
 	url = https://github.com/boostorg/boost.git
-[submodule "GeneralCMakePresets"]
-	path = GeneralCMakePresets
-	url = https://github.com/ChristianHinkle/GeneralCMakePresets.git
 [submodule "CppUtils"]
 	path = CppUtils
 	url = https://github.com/ChristianHinkle/CppUtils.git
 [submodule "MeddyCLI"]
 	path = MeddyCLI
 	url = https://github.com/ChristianHinkle/MeddyCLI
+[submodule "CMakePresets_General"]
+	path = CMakePresets_General
+	url = https://github.com/ChristianHinkle/CMakePresets_General
