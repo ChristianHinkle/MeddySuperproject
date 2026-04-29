@@ -47,6 +47,17 @@ FetchContent_Declare(Boost
   EXCLUDE_FROM_ALL
   )
 
+FetchContent_Declare(RapidJSON
+  SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/rapidjson"
+  OVERRIDE_FIND_PACKAGE
+  EXCLUDE_FROM_ALL
+  )
+
+FetchContent_Declare(RapidJsonCmakeInterface
+  SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/RapidJsonCmakeInterface"
+  OVERRIDE_FIND_PACKAGE
+  )
+
 FetchContent_Declare(MeddySDK
   SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/MeddySDK"
   OVERRIDE_FIND_PACKAGE
@@ -69,6 +80,26 @@ FetchContent_Declare(MeddyCLI
 FetchContent_MakeAvailable(CppUtils)
 
 FetchContent_MakeAvailable(Boost)
+
+# Save the variable's original value.
+if(DEFINED CMAKE_POLICY_VERSION_MINIMUM)
+  set(CMAKE_POLICY_VERSION_MINIMUM_original_value "${CMAKE_POLICY_VERSION_MINIMUM}")
+endif()
+
+# Set the variable for this subdirectory to avoid configuration errors.
+set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
+
+FetchContent_MakeAvailable(RapidJSON)
+
+# Restore the variable's original value.
+if(DEFINED CMAKE_POLICY_VERSION_MINIMUM_original_value)
+  set(CMAKE_POLICY_VERSION_MINIMUM "${CMAKE_POLICY_VERSION_MINIMUM_original_value}")
+  unset(CMAKE_POLICY_VERSION_MINIMUM_original_value)
+else()
+  unset(CMAKE_POLICY_VERSION_MINIMUM)
+endif()
+
+FetchContent_MakeAvailable(RapidJsonCmakeInterface)
 
 FetchContent_MakeAvailable(MeddySDK)
 

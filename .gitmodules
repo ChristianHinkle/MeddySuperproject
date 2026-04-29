@@ -17,3 +17,6 @@
 [submodule "rapidjson"]
 	path = rapidjson
 	url = https://github.com/Tencent/rapidjson.git
+[submodule "RapidJsonCmakeInterface"]
+	path = RapidJsonCmakeInterface
+	url = https://github.com/ChristianHinkle/RapidJsonCmakeInterface.git
