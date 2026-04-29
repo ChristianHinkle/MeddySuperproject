@@ -14,3 +14,6 @@
 [submodule "CMakePresets_General"]
 	path = CMakePresets_General
 	url = https://github.com/ChristianHinkle/CMakePresets_General
+[submodule "rapidjson"]
+	path = rapidjson
+	url = https://github.com/Tencent/rapidjson.git

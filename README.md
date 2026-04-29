@@ -25,6 +25,8 @@ Third-party repositories
     - Etc.
 - [The Boost C++ Libraries](https://github.com/boostorg/boost)
     - A popular open source repository that provides many C++ libraries.
+- [RapidJSON](https://github.com/Tencent/rapidjson)
+    - A popular json serializer library known for being fast and memory efficient, often used in games.
 
 These projects are built together using `FetchContent` in CMake. This means they configure together (all from the same invocation of CMake), which makes debugging and development easier with the subprojects.
 
