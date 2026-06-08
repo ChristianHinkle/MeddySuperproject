@@ -20,3 +20,6 @@
 [submodule "RapidJsonCmakeInterface"]
 	path = RapidJsonCmakeInterface
 	url = https://github.com/ChristianHinkle/RapidJsonCmakeInterface.git
+[submodule "BoostUtils"]
+	path = BoostUtils
+	url = https://github.com/ChristianHinkle/BoostUtils.git

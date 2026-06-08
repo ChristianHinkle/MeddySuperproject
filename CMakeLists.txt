@@ -58,6 +58,11 @@ FetchContent_Declare(RapidJsonCmakeInterface
   OVERRIDE_FIND_PACKAGE
   )
 
+FetchContent_Declare(BoostUtils
+  SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/BoostUtils"
+  OVERRIDE_FIND_PACKAGE
+  )
+
 FetchContent_Declare(MeddySDK
   SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/MeddySDK"
   OVERRIDE_FIND_PACKAGE
@@ -100,6 +105,8 @@ else()
 endif()
 
 FetchContent_MakeAvailable(RapidJsonCmakeInterface)
+
+FetchContent_MakeAvailable(BoostUtils)
 
 FetchContent_MakeAvailable(MeddySDK)
 

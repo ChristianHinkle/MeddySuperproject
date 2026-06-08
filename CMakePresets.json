@@ -13,6 +13,7 @@
         "${sourceDir}/CMakePresets_General/CMakePresets.json",
         "MeddySDK/CMakePresets.json",
         "MeddyCLI/CMakePresets.json",
-        "CppUtils/CMakePresets.json"
+        "CppUtils/CMakePresets.json",
+        "BoostUtils/CMakePresets.json"
     ]
 }
