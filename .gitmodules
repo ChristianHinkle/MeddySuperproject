@@ -23,3 +23,6 @@
 [submodule "BoostUtils"]
 	path = BoostUtils
 	url = https://github.com/ChristianHinkle/BoostUtils.git
+[submodule "CommandParserCpp"]
+	path = CommandParserCpp
+	url = https://github.com/ChristianHinkle/CommandParserCpp

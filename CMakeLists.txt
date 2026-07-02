@@ -68,6 +68,11 @@ FetchContent_Declare(MeddySDK
   OVERRIDE_FIND_PACKAGE
   )
 
+FetchContent_Declare(CommandParser
+  SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/CommandParserCpp"
+  OVERRIDE_FIND_PACKAGE
+  )
+
 FetchContent_Declare(MeddyCLI
   SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/MeddyCLI"
   OVERRIDE_FIND_PACKAGE
@@ -109,5 +114,7 @@ FetchContent_MakeAvailable(RapidJsonCmakeInterface)
 FetchContent_MakeAvailable(BoostUtils)
 
 FetchContent_MakeAvailable(MeddySDK)
+
+FetchContent_MakeAvailable(CommandParser)
 
 FetchContent_MakeAvailable(MeddyCLI)

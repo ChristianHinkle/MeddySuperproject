@@ -14,6 +14,7 @@
         "MeddySDK/CMakePresets.json",
         "MeddyCLI/CMakePresets.json",
         "CppUtils/CMakePresets.json",
-        "BoostUtils/CMakePresets.json"
+        "BoostUtils/CMakePresets.json",
+        "CommandParserCpp/CMakePresets.json"
     ]
 }
