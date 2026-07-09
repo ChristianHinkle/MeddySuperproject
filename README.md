@@ -23,6 +23,8 @@ Third-party repositories
     - [CppUtils_Misc](https://github.com/ChristianHinkle/CppUtils_Misc) (library)
     - [CppUtils_StdReimpl](https://github.com/ChristianHinkle/CppUtils_StdReimpl) (library)
     - Etc.
+- [CommandParserCpp](https://github.com/ChristianHinkle/CommandParserCpp)
+    - Written by us. This is where we implement command-line token parsing for our CLI applications.
 - [The Boost C++ Libraries](https://github.com/boostorg/boost)
     - A popular open source repository that provides many C++ libraries.
 - [RapidJSON](https://github.com/Tencent/rapidjson)
